@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: black;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+header .bg-body-tertiary {
+  --bs-bg-opacity: 0;
+  background-color: rgba(var(--bs-tertiary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+header .navbar {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+header .navbar .container-fluid {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+header .navbar .container-fluid .navbar-brand {
+  color: white;
+  font-family: "Roboto Slab", serif;
+  transition: all 200ms ease;
+}
+header .navbar .container-fluid .navbar-brand:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+header .navbar .container-fluid .navbar-toggler {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+  --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  line-height: 0;
+  padding: 0 1%;
+  font-size: 15px;
+}
+header .navbar .container-fluid .navbar-toggler {
+  border: 0;
+  padding: 4%;
+}
+header .navbar .container-fluid .nav-link {
+  color: white;
+  padding: 3%;
+  transition: all 400ms ease;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+}
+header .navbar .container-fluid .nav-link:hover {
+  transform: translateY(-7%);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.inicio {
+  background: url(../imagenes/2fondo.png) center fixed no-repeat;
+  height: 93vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto Slab", serif;
+}
+.inicio .title-index {
+  color: white;
+  font-size: 200%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.inicio .p-index {
+  color: white;
+  font-size: 110%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.diferencias {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  margin-bottom: 3%;
+}
+.diferencias .title-dif {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8% 3%;
+}
+.diferencias .p-dif {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 0 4% 8%;
+  margin: 0;
+}
+
+.gallery-products {
+  margin: 10% 0 0 0;
+  padding-bottom: 10%;
+}
+.gallery-products .title-products {
+  text-align: center;
+  font-size: 170%;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 8% 0;
+  margin: 0;
+}
+.gallery-products #descartables {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-products #descartables .title-descartables {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15% 0 5%;
+  margin: 0;
+}
+.gallery-products #descartables .card {
+  width: 85%;
+  margin: 10% 0;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: all 200ms ease;
+}
+.gallery-products #descartables .card:hover {
+  transform: translateY(-3%);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+.gallery-products #descartables .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+.gallery-products #descartables .card .card-body .button-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 60%;
+  transition: all 200ms ease;
+}
+.gallery-products #descartables .card .card-body .button-card:hover {
+  background-color: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.gallery-products #recargables {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-products #recargables .title-recargables {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15% 0 5%;
+  margin: 0;
+}
+.gallery-products #recargables .card {
+  width: 85%;
+  margin: 10% 0;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: all 200ms ease;
+}
+.gallery-products #recargables .card:hover {
+  transform: translateY(-3%);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+.gallery-products #recargables .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+.gallery-products #recargables .card .card-body .button-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 60%;
+  transition: all 200ms ease;
+}
+.gallery-products #recargables .card .card-body .button-card:hover {
+  background-color: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+.gallery-products #sales {
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-products #sales .title-sales {
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15% 0 5%;
+  margin: 0;
+}
+.gallery-products #sales .card {
+  width: 85%;
+  margin: 10% 0;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: all 200ms ease;
+}
+.gallery-products #sales .card:hover {
+  transform: translateY(-3%);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+.gallery-products #sales .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+}
+.gallery-products #sales .card .card-body .button-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 60%;
+  transition: all 200ms ease;
+}
+.gallery-products #sales .card .card-body .button-card:hover {
+  background-color: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+  background-color: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  padding: 6% 2% 3%;
+}
+footer .div-icons {
+  text-align: center;
+}
+footer .div-icons .icon-footer {
+  font-size: 200%;
+  padding: 2% 4%;
+  color: white;
+  transition: all 200ms ease;
+}
+footer .div-icons .icon-footer:hover {
+  transform: translateY(-5%);
+  color: rgba(255, 255, 255, 0.6);
+}
+footer .text-footer {
+  margin: 5% 0 2%;
+  text-align: center;
+  font-size: 90%;
+  padding: 0 4%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/*# sourceMappingURL=style.css.map */
