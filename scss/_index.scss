@@ -1,5 +1,4 @@
 .inicio {
-  background: url(../imagenes/2fondo.png) center fixed no-repeat;
   height: 93vh;
   width: 100%;
   display: flex;
@@ -27,7 +26,7 @@
 
 .diferencias {
   box-shadow: 0 0 15px map-get($color, shadow-secondary-3);
-  margin-bottom: 3%;
+  background-color: map-get($color, primary-color);
 
   .title-dif {
     text-align: center;
@@ -66,7 +65,7 @@
     }
 
     .card {
-      @include card;
+      @include card-mobile;
     }
   }
 
@@ -81,7 +80,7 @@
     }
 
     .card {
-      @include card;
+      @include card-mobile;
     }
   }
 
@@ -96,7 +95,7 @@
     }
 
     .card {
-      @include card;
+      @include card-mobile;
     }
   }
 }

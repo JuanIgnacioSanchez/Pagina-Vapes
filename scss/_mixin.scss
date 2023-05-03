@@ -2,12 +2,12 @@
   transition: all $ms ease;
 }
 
-@mixin card {
+@mixin card-mobile {
   width: 85%;
   margin: 10% 0;
   border: 1px solid map-get($color, shadow-primary-8);
   box-shadow: 0 0 10px map-get($color, shadow-secondary-3);
-  @include transition-1(200ms);
+  @include transition-1(300ms);
 
   &:hover {
     transform: translateY(-3%);
@@ -44,4 +44,70 @@
   color: map-get($color, shadow-secondary-6);
   padding: 15% 0 5%;
   margin: 0;
+}
+
+@mixin card-tablet($width) {
+  .card {
+    width: $width;
+
+    .card-body {
+      .card-title {
+        font-size: 190%;
+      }
+
+      .card-text {
+        font-size: 140%;
+      }
+
+      .button-card {
+        font-size: 120%;
+      }
+    }
+  }
+}
+
+@mixin card-laptop($width) {
+  .card {
+    width: $width;
+    margin: 5%;
+
+    .card-body {
+      .card-title {
+        font-size: 160%;
+        padding-bottom: 5%;
+      }
+
+      .card-text {
+        font-size: 120%;
+      }
+
+      .button-card {
+        width: 80%;
+        font-size: 110%;
+      }
+    }
+  }
+}
+
+@mixin card-desktop($width) {
+  .card {
+    width: $width;
+    margin: 3%;
+
+    .card-body {
+      .card-title {
+        font-size: 160%;
+        padding-bottom: 5%;
+      }
+
+      .card-text {
+        font-size: 120%;
+      }
+
+      .button-card {
+        width: 80%;
+        font-size: 110%;
+      }
+    }
+  }
 }

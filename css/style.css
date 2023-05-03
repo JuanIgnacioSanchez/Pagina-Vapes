@@ -6,9 +6,292 @@
 }
 
 main {
-  background-color: black;
+  background: url(../imagenes/2fondo.png) center fixed no-repeat;
+  background-size: cover;
 }
 
+@media (min-width: 768px) {
+  /* Header */
+  header .navbar .container-fluid .navbar-brand {
+    font-size: 150%;
+  }
+  header .navbar .container-fluid .navbar-collapse {
+    font-size: 130%;
+  }
+  /* Index */
+  main .inicio {
+    height: 100vh;
+  }
+  main .inicio .title-index {
+    font-size: 250%;
+  }
+  main .inicio .p-index {
+    font-size: 160%;
+  }
+  main .diferencias {
+    transition: all 400ms ease;
+  }
+  main .diferencias:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+  }
+  main .diferencias .title-dif {
+    font-size: 210%;
+  }
+  main .diferencias .p-dif {
+    font-size: 140%;
+  }
+  main .gallery-products .title-products {
+    font-size: 250%;
+    padding: 8% 0 2%;
+  }
+  main .gallery-products #descartables .title-descartables {
+    padding: 10% 0 5%;
+    font-size: 200%;
+  }
+  main .gallery-products #descartables .card {
+    width: 60%;
+  }
+  main .gallery-products #descartables .card .card-body .card-title {
+    font-size: 190%;
+  }
+  main .gallery-products #descartables .card .card-body .card-text {
+    font-size: 140%;
+  }
+  main .gallery-products #descartables .card .card-body .button-card {
+    font-size: 120%;
+  }
+  main .gallery-products #recargables .title-recargables {
+    padding: 10% 0 5%;
+    font-size: 200%;
+  }
+  main .gallery-products #recargables .card {
+    width: 60%;
+  }
+  main .gallery-products #recargables .card .card-body .card-title {
+    font-size: 190%;
+  }
+  main .gallery-products #recargables .card .card-body .card-text {
+    font-size: 140%;
+  }
+  main .gallery-products #recargables .card .card-body .button-card {
+    font-size: 120%;
+  }
+  main .gallery-products #sales .title-sales {
+    padding: 10% 0 5%;
+    font-size: 200%;
+  }
+  main .gallery-products #sales .card {
+    width: 60%;
+  }
+  main .gallery-products #sales .card .card-body .card-title {
+    font-size: 190%;
+  }
+  main .gallery-products #sales .card .card-body .card-text {
+    font-size: 140%;
+  }
+  main .gallery-products #sales .card .card-body .button-card {
+    font-size: 120%;
+  }
+  /* Footer */
+  footer .div-icons a .icon-footer {
+    font-size: 290%;
+  }
+  footer .text-footer .p-footer {
+    font-size: 160%;
+  }
+}
+@media (min-width: 992px) {
+  /* Header */
+  header .navbar .container-fluid .navbar-collapse {
+    display: flex;
+    justify-content: end;
+  }
+  header .navbar .container-fluid .navbar-collapse .navbar-nav {
+    width: 90%;
+    justify-content: end;
+  }
+  /* Index */
+  main .inicio {
+    height: 90vh;
+  }
+  main .inicio .title-index {
+    font-size: 270%;
+  }
+  main .diferencias .title-dif {
+    font-size: 190%;
+  }
+  main .diferencias .p-dif {
+    font-size: 120%;
+  }
+  main .gallery-products {
+    margin: 4% 0 0;
+  }
+  main .gallery-products #descartables {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .gallery-products #descartables .card {
+    width: 30%;
+    margin: 5%;
+  }
+  main .gallery-products #descartables .card .card-body .card-title {
+    font-size: 160%;
+    padding-bottom: 5%;
+  }
+  main .gallery-products #descartables .card .card-body .card-text {
+    font-size: 120%;
+  }
+  main .gallery-products #descartables .card .card-body .button-card {
+    width: 80%;
+    font-size: 110%;
+  }
+  main .gallery-products #descartables .title-descartables {
+    width: 100%;
+  }
+  main .gallery-products #recargables {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .gallery-products #recargables .card {
+    width: 30%;
+    margin: 5%;
+  }
+  main .gallery-products #recargables .card .card-body .card-title {
+    font-size: 160%;
+    padding-bottom: 5%;
+  }
+  main .gallery-products #recargables .card .card-body .card-text {
+    font-size: 120%;
+  }
+  main .gallery-products #recargables .card .card-body .button-card {
+    width: 80%;
+    font-size: 110%;
+  }
+  main .gallery-products #recargables .title-recargables {
+    width: 100%;
+  }
+  main .gallery-products #sales {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .gallery-products #sales .card {
+    width: 30%;
+    margin: 5%;
+  }
+  main .gallery-products #sales .card .card-body .card-title {
+    font-size: 160%;
+    padding-bottom: 5%;
+  }
+  main .gallery-products #sales .card .card-body .card-text {
+    font-size: 120%;
+  }
+  main .gallery-products #sales .card .card-body .button-card {
+    width: 80%;
+    font-size: 110%;
+  }
+  main .gallery-products #sales .title-sales {
+    width: 100%;
+  }
+  /* Footer */
+  #footer {
+    padding: 3% 2%;
+  }
+  #footer .div-icons a .icon-footer {
+    font-size: 260%;
+  }
+  #footer .text-footer .p-footer {
+    font-size: 130%;
+  }
+}
+@media (min-width: 1400px) {
+  /* Index */
+  main .diferencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  main .diferencias .title-dif {
+    padding: 3% 0;
+    width: 70%;
+    font-size: 210%;
+  }
+  main .diferencias .p-dif {
+    width: 70%;
+    padding: 0 3% 3%;
+    font-size: 140%;
+  }
+  main .gallery-products .title-products {
+    font-size: 290%;
+    padding: 8% 0 0;
+  }
+  main .gallery-products #descartables .title-descartables {
+    font-size: 230%;
+  }
+  main .gallery-products #descartables .card {
+    width: 25%;
+    margin: 3%;
+  }
+  main .gallery-products #descartables .card .card-body .card-title {
+    font-size: 160%;
+    padding-bottom: 5%;
+  }
+  main .gallery-products #descartables .card .card-body .card-text {
+    font-size: 120%;
+  }
+  main .gallery-products #descartables .card .card-body .button-card {
+    width: 80%;
+    font-size: 110%;
+  }
+  main .gallery-products #recargables .title-recargables {
+    font-size: 230%;
+  }
+  main .gallery-products #recargables .card {
+    width: 25%;
+    margin: 3%;
+  }
+  main .gallery-products #recargables .card .card-body .card-title {
+    font-size: 160%;
+    padding-bottom: 5%;
+  }
+  main .gallery-products #recargables .card .card-body .card-text {
+    font-size: 120%;
+  }
+  main .gallery-products #recargables .card .card-body .button-card {
+    width: 80%;
+    font-size: 110%;
+  }
+  main .gallery-products #sales .title-sales {
+    font-size: 230%;
+  }
+  main .gallery-products #sales .card {
+    width: 25%;
+    margin: 3%;
+  }
+  main .gallery-products #sales .card .card-body .card-title {
+    font-size: 160%;
+    padding-bottom: 5%;
+  }
+  main .gallery-products #sales .card .card-body .card-text {
+    font-size: 120%;
+  }
+  main .gallery-products #sales .card .card-body .button-card {
+    width: 80%;
+    font-size: 110%;
+  }
+  /* Footer */
+  #footer .div-icons a .icon-footer {
+    font-size: 290%;
+    padding: 1% 3%;
+  }
+  #footer .text-footer .p-footer {
+    font-size: 150%;
+  }
+}
 header {
   position: sticky;
   top: 0;
@@ -80,7 +363,6 @@ header .navbar .container-fluid .nav-link:hover {
 }
 
 .inicio {
-  background: url(../imagenes/2fondo.png) center fixed no-repeat;
   height: 93vh;
   width: 100%;
   display: flex;
@@ -106,7 +388,7 @@ header .navbar .container-fluid .nav-link:hover {
 
 .diferencias {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
-  margin-bottom: 3%;
+  background-color: black;
 }
 .diferencias .title-dif {
   text-align: center;
@@ -149,7 +431,7 @@ header .navbar .container-fluid .nav-link:hover {
   margin: 10% 0;
   border: 1px solid rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  transition: all 200ms ease;
+  transition: all 300ms ease;
 }
 .gallery-products #descartables .card:hover {
   transform: translateY(-3%);
@@ -193,7 +475,7 @@ header .navbar .container-fluid .nav-link:hover {
   margin: 10% 0;
   border: 1px solid rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  transition: all 200ms ease;
+  transition: all 300ms ease;
 }
 .gallery-products #recargables .card:hover {
   transform: translateY(-3%);
@@ -237,7 +519,7 @@ header .navbar .container-fluid .nav-link:hover {
   margin: 10% 0;
   border: 1px solid rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-  transition: all 200ms ease;
+  transition: all 300ms ease;
 }
 .gallery-products #sales .card:hover {
   transform: translateY(-3%);

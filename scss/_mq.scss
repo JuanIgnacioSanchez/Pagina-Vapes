@@ -1,0 +1,268 @@
+@media (min-width: 768px) {
+  /* Header */
+  header {
+    .navbar {
+      .container-fluid {
+        .navbar-brand {
+          font-size: 150%;
+        }
+
+        .navbar-collapse {
+          font-size: 130%;
+        }
+      }
+    }
+  }
+
+  /* Index */
+  main {
+    .inicio {
+      height: 100vh;
+
+      .title-index {
+        font-size: 250%;
+      }
+
+      .p-index {
+        font-size: 160%;
+      }
+    }
+
+    .diferencias {
+      @include transition-1(400ms);
+
+      &:hover {
+        background-color: map-get($color, shadow-primary-8);
+        box-shadow: 0 0 25px map-get($color, shadow-secondary-5);
+      }
+
+      .title-dif {
+        font-size: 210%;
+      }
+
+      .p-dif {
+        font-size: 140%;
+      }
+    }
+
+    .gallery-products {
+      .title-products {
+        font-size: 250%;
+        padding: 8% 0 2%;
+      }
+
+      #descartables {
+        .title-descartables {
+          padding: 10% 0 5%;
+          font-size: 200%;
+        }
+
+        @include card-tablet(60%);
+      }
+
+      #recargables {
+        .title-recargables {
+          padding: 10% 0 5%;
+          font-size: 200%;
+        }
+
+        @include card-tablet(60%);
+      }
+
+      #sales {
+        .title-sales {
+          padding: 10% 0 5%;
+          font-size: 200%;
+        }
+
+        @include card-tablet(60%);
+      }
+    }
+  }
+
+  /* Footer */
+  footer {
+    .div-icons {
+      a {
+        .icon-footer {
+          font-size: 290%;
+        }
+      }
+    }
+
+    .text-footer {
+      .p-footer {
+        font-size: 160%;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  /* Header */
+  header {
+    .navbar {
+      .container-fluid {
+        .navbar-collapse {
+          display: flex;
+          justify-content: end;
+
+          .navbar-nav {
+            width: 90%;
+            justify-content: end;
+          }
+        }
+      }
+    }
+  }
+
+  /* Index */
+  main {
+    .inicio {
+      height: 90vh;
+
+      .title-index {
+        font-size: 270%;
+      }
+    }
+
+    .diferencias {
+      .title-dif {
+        font-size: 190%;
+      }
+
+      .p-dif {
+        font-size: 120%;
+      }
+    }
+
+    .gallery-products {
+      margin: 4% 0 0;
+
+      #descartables {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include card-laptop(30%);
+
+        .title-descartables {
+          width: 100%;
+        }
+      }
+
+      #recargables {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include card-laptop(30%);
+
+        .title-recargables {
+          width: 100%;
+        }
+      }
+
+      #sales {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include card-laptop(30%);
+
+        .title-sales {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  /* Footer */
+  #footer {
+    padding: 3% 2%;
+
+    .div-icons {
+      a {
+        .icon-footer {
+          font-size: 260%;
+        }
+      }
+    }
+
+    .text-footer {
+      .p-footer {
+        font-size: 130%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  /* Index */
+  main {
+    .diferencias {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title-dif {
+        padding: 3% 0;
+        width: 70%;
+        font-size: 210%;
+      }
+
+      .p-dif {
+        width: 70%;
+        padding: 0 3% 3%;
+        font-size: 140%;
+      }
+    }
+
+    .gallery-products {
+      .title-products {
+        font-size: 290%;
+        padding: 8% 0 0;
+      }
+
+      #descartables {
+        .title-descartables {
+          font-size: 230%;
+        }
+
+        @include card-desktop(25%);
+      }
+
+      #recargables {
+        .title-recargables {
+          font-size: 230%;
+        }
+
+        @include card-desktop(25%);
+      }
+
+      #sales {
+        .title-sales {
+          font-size: 230%;
+        }
+
+        @include card-desktop(25%);
+      }
+    }
+  }
+
+  /* Footer */
+  #footer {
+    .div-icons {
+      a {
+        .icon-footer {
+          font-size: 290%;
+          padding: 1% 3%;
+        }
+      }
+    }
+
+    .text-footer {
+      .p-footer {
+        font-size: 150%;
+      }
+    }
+  }
+}
